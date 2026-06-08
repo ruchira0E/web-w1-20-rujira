@@ -7,11 +7,13 @@
 </head>
 <body>
     
+    <body style="background-color: #e1f5fe;">
+
     <?php
         echo "<h1 style='color:skyblue'>งานที่ 1 รุจิรา BIT.2/4 เลขที่19</h1>";
     ?>
 
-    <a href="while.php">While Loop</a>
+    <a href="index.php"><button>if</button></a>
 
     <form action="">
         <label for="">กรอกเลขแม่สูตรคูณ</label> <br> 
@@ -25,10 +27,11 @@
 
             echo "สูตรคูณแม่" . $num . "<br>";
 
-            //.  เริ่มต้น     สิ้นสุด  เพิ่มทีละ1
-            for($i = 1; $i <= 12; $i++){
+            $i = 1;
+            while($i <= 12){
                 echo $num . " x " .$i . " = " . $num * $i . "<br>";  //num=เลขแม่ i=ตัวคูณ
 
+                $i++;
             }
         }
     ?>
